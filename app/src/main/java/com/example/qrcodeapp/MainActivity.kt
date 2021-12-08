@@ -13,6 +13,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        // Viewの取得
         val btnScan: Button = findViewById(R.id.btnScan)
         val btnHistry: Button = findViewById(R.id.btnHistry)
 
