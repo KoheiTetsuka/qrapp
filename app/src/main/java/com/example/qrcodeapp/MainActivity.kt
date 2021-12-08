@@ -14,9 +14,15 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val btnScan: Button = findViewById(R.id.btnScan)
+        val btnHistry: Button = findViewById(R.id.btnHistry)
 
         btnScan.setOnClickListener {
             val intent = Intent(this, SecondActivity::class.java)
+            startActivity(intent)
+        }
+
+        btnHistry.setOnClickListener {
+            val intent = Intent(this, History::class.java)
             startActivity(intent)
         }
 

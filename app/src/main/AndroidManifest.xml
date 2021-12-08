@@ -12,7 +12,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.QRCodeApp">
         <activity
-            android:name=".secondActivity"
+            android:name=".History"
+            android:exported="true" />
+        <activity
+            android:name=".SecondActivity"
             android:exported="true" />
         <activity android:name=".MainActivity">
             <intent-filter>
