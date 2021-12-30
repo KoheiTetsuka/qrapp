@@ -33,9 +33,7 @@ class SecondActivity : AppCompatActivity() {
         if (result != null) {
             // result.contents で取得した値を参照できる
             Toast.makeText(applicationContext, result.contents, Toast.LENGTH_LONG).show()
-        }
-
-        else {
+        } else {
             super.onActivityResult(requestCode, resultCode, data)
         }
     }

@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">QRCodeApp</string>
+    <string name="main_name">QRコードリーダー</string>
+    <string name="btn_scan">スキャン</string>
+    <string name="btn_histry">履歴</string>
+    <string name="btn_back">戻る</string>
 </resources>

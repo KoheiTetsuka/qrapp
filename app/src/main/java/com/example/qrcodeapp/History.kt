@@ -12,6 +12,7 @@ class History : AppCompatActivity() {
         // Viewの取得
         val btnBack: Button = findViewById(R.id.btnBack)
 
+        // 戻るボタン
         btnBack.setOnClickListener {
             finish()
         }
