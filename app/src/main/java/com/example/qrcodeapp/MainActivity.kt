@@ -1,11 +1,15 @@
 package com.example.qrcodeapp
 
+import android.Manifest
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import com.example.qrcodeapp.databinding.ActivityMainBinding
+import permissions.dispatcher.NeedsPermission
+import permissions.dispatcher.RuntimePermissions
 
+@RuntimePermissions
 class MainActivity : AppCompatActivity() {
 
     lateinit var binding: ActivityMainBinding
@@ -16,8 +20,7 @@ class MainActivity : AppCompatActivity() {
 
         // Viewの取得
         binding.btnScan.setOnClickListener {
-            val intent = Intent(this, SecondActivity::class.java)
-            startActivity(intent)
+            openCameraWithPermissionCheck()
         }
 
         binding.btnHistry.setOnClickListener {
@@ -25,4 +28,10 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
     }
+
+    @NeedsPermission(Manifest.permission.CAMERA)
+    fun openCamera() {
+
+    }
+
 }
